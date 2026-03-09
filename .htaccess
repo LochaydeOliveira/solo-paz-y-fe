@@ -2,7 +2,7 @@
 RewriteEngine On
 
 # Definir o base do Rewrite
-RewriteBase /solo-paz-y-fe/
+RewriteBase /
 
 # Redirecionar HTTP para HTTPS
 RewriteCond %{HTTPS} off
@@ -31,9 +31,7 @@ Options -Indexes
     RewriteRule ^(config|includes|sql)/ - [F,L]
 </IfModule>
 
-
-
-# URLs Amigáveis (Sem a barra inicial no padrão de busca)
+# URLs Amigáveis
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^post/([a-zA-Z0-9-]+)/?$ post.php?slug=$1 [L,QSA]
@@ -44,7 +42,6 @@ RewriteRule ^sobre/?$ sobre.php [L,QSA]
 RewriteRule ^contato/?$ contato.php [L,QSA]
 RewriteRule ^privacidade/?$ privacidade.php [L,QSA]
 RewriteRule ^termos/?$ termos.php [L,QSA]
-
 
 # Regras para páginas (DEVE VIR POR ÚLTIMO)
 RewriteCond %{REQUEST_FILENAME} !-f

@@ -2,7 +2,7 @@
 // Configurações do Blog
 define('BLOG_TITLE', 'Solo Paz y Fé');
 define('BLOG_DESCRIPTION', 'Conteúdo diário sobre política, futebol, tecnologia, culinária, mundo animal e muito mais.');
-define('BLOG_URL', 'https://4lifehappy.com/solo-paz-y-fe');
+define('BLOG_URL', 'https://4lifehappy.com');
 define('BLOG_PATH', ''); 
 
 // Configurações de SEO
