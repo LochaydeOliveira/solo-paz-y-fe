@@ -2,7 +2,7 @@
 
     ob_start();
 
-    require_once 'includes/db.php';  // Deve definir $pdo
+    require_once 'includes/db.php';
     require_once 'config/config.php';
 
     $request_uri = strtok($_SERVER["REQUEST_URI"], '?');
