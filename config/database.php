@@ -6,6 +6,8 @@ define('DB_NAME', 'paymen58_solo_paz_y_fe');
 define('DB_USER', 'paymen58');
 define('DB_PASS', 'u4q7+B6ly)obP_gxN9sNe');
 
+
+
 $dsnLocal = "mysql:host=" . DB_HOST_LOCAL . ";dbname=" . DB_NAME . ";charset=utf8mb4";
 $dsnIP = "mysql:host=" . DB_HOST_IP . ";dbname=" . DB_NAME . ";charset=utf8mb4";
 
