@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+      - main
+name: 🚀 Deploy Brasil Hilário
+jobs:
+  web-deploy:
+    name: 🎉 Sync Files
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: 📂 FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ./

@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /https://brasilhilario.com.br/
+Allow: /https://brasilhilario.com.br/post/
+Allow: /https://brasilhilario.com.br/categoria/
+Allow: /https://brasilhilario.com.br/tag/
+Allow: /https://brasilhilario.com.br/sobre
+Allow: /https://brasilhilario.com.br/contato
+
+Disallow: /https://brasilhilario.com.br/admin/
+Disallow: /https://brasilhilario.com.br/includes/
+Disallow: /https://brasilhilario.com.br/config/
+Disallow: /https://brasilhilario.com.br/api/
+Disallow: /https://brasilhilario.com.br/assets/js/
+Disallow: /https://brasilhilario.com.br/assets/css/
+Disallow: /https://brasilhilario.com.br/uploads/
+
+
+
+Sitemap: https://brasilhilario.com.br/sitemap.xml

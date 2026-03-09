@@ -1,0 +1,16 @@
+# Configuração padrão para todos os arquivos
+* text=auto
+
+# Arquivos específicos que devem manter LF
+*.css text eol=lf
+*.js text eol=lf
+*.php text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+
+# Arquivos binários que não devem ser modificados
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.svg binary 

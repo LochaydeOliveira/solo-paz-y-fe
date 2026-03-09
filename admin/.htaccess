@@ -1,0 +1,26 @@
+# Proteger a pasta admin
+Options -Indexes
+
+# Forçar HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Configurações de PHP
+<IfModule mod_php.c>
+    php_value display_errors Off
+    php_value log_errors On
+    php_value error_log error.log
+</IfModule>
+
+# Proteger arquivos sensíveis
+<FilesMatch "^(\.htaccess|\.htpasswd|\.git|\.env)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Permitir acesso a todos os arquivos
+<Files *>
+    Order Allow,Deny
+    Allow from all
+</Files> 

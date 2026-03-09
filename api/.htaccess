@@ -1,0 +1,21 @@
+# Permitir acesso às APIs
+<Files "*.php">
+    Order allow,deny
+    Allow from all
+</Files>
+
+# Headers para APIs
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type"
+</IfModule>
+
+# Configurações específicas para APIs
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Permitir requisições OPTIONS (CORS preflight)
+    RewriteCond %{REQUEST_METHOD} OPTIONS
+    RewriteRule ^(.*)$ $1 [R=200,L]
+</IfModule> 
