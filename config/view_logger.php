@@ -1,17 +1,9 @@
 <?php
-/**
- * Sistema de Log para Visualizações
- * 
- * Este arquivo registra visualizações filtradas para monitoramento
- * e debug do sistema de contagem de visualizações.
- */
 
-// Função para registrar visualização filtrada
 function logFilteredView($post_id, $reason, $user_agent = '', $ip = '') {
     $log_file = __DIR__ . '/../logs/filtered_views.log';
     $log_dir = dirname($log_file);
     
-    // Criar diretório de logs se não existir
     if (!is_dir($log_dir)) {
         mkdir($log_dir, 0755, true);
     }
@@ -29,12 +21,11 @@ function logFilteredView($post_id, $reason, $user_agent = '', $ip = '') {
     file_put_contents($log_file, $log_entry, FILE_APPEND | LOCK_EX);
 }
 
-// Função para registrar visualização contada
+
 function logCountedView($post_id, $ip = '') {
     $log_file = __DIR__ . '/../logs/counted_views.log';
     $log_dir = dirname($log_file);
     
-    // Criar diretório de logs se não existir
     if (!is_dir($log_dir)) {
         mkdir($log_dir, 0755, true);
     }
@@ -50,7 +41,7 @@ function logCountedView($post_id, $ip = '') {
     file_put_contents($log_file, $log_entry, FILE_APPEND | LOCK_EX);
 }
 
-// Função para obter estatísticas de visualizações filtradas
+
 function getFilteredViewsStats($days = 7) {
     $log_file = __DIR__ . '/../logs/filtered_views.log';
     

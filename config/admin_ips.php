@@ -1,9 +1,5 @@
 <?php
-/**
- * Configuração de IPs e Filtros de Visualizações
- */
 
-// Seus IPs fixos (opcional, já que usaremos cookie)
 $ADMIN_IPS = [
     '179.48.3.74', 
     '127.0.0.1',   

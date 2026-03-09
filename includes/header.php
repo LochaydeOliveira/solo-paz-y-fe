@@ -1,6 +1,6 @@
 <?php
     require_once 'config/config.php';
-    require_once 'includes/db.php'; // Garante que $pdo esteja disponível
+    require_once 'includes/db.php';
 
     $page_title = isset($og_title) ? $og_title : BLOG_TITLE;
     $page_description = isset($meta_description) ? $meta_description : BLOG_DESCRIPTION;
