@@ -1,9 +1,9 @@
 <?php
 // Configurações do Blog
-define('BLOG_TITLE', 'Brasil Hilário');
+define('BLOG_TITLE', 'Solo Paz y Fé');
 define('BLOG_DESCRIPTION', 'Conteúdo diário sobre política, futebol, tecnologia, culinária, mundo animal e muito mais.');
-define('BLOG_URL', 'https://www.brasilhilario.com.br');
-define('BLOG_PATH', ''); // Caminho relativo vazio para a raiz
+define('BLOG_URL', 'https://4lifehappy.com/solo-paz-y-fe');
+define('BLOG_PATH', ''); 
 
 // Configurações de SEO
 define('META_KEYWORDS', 'humor, piadas, memes, vídeos engraçados, notícias engraçadas, brasil hilário');

@@ -26,29 +26,6 @@
 <head>
 
     <script>
-        function loadGoogleAnalytics() {
-            const script = document.createElement('script');
-            script.async = true;
-            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-M6BPB3MLZ2';
-            document.head.appendChild(script);
-            
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-M6BPB3MLZ2', {
-            'consent_mode': 'default',
-            'analytics_storage': 'denied'
-            });
-            
-
-            const consent = getCookieConsent();
-            if (consent && consent.analytics) {
-            gtag('consent', 'update', {
-                'analytics_storage': 'granted'
-            });
-            }
-        }
-        
 
         function getCookieConsent() {
             const nameEQ = 'brasil_hilario_cookie_consent' + "=";
