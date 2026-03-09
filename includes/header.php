@@ -79,7 +79,7 @@
     <meta name="description" content="<?php echo $page_description; ?>">
     <meta name="keywords" content="<?php echo $page_keywords; ?>">
     <meta name="google-adsense-account" content="ca-pub-8313157699231074">
-    <meta name="author" content="Solo Paz">
+    <meta name="author" content="Solo Paz y Fe">
 
     <meta property="og:type" content="<?php echo $page_og_type; ?>">
     <meta property="og:url" content="<?php echo $page_url; ?>">
